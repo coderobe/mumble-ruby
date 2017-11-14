@@ -79,7 +79,6 @@ module Mumble
         kill_threads
         @encoder.reset
         @file.close unless @file.closed?
-        @portaudio.stop unless @portaudio.stopped?
         @playing = false
       end
     end
